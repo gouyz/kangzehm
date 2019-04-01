@@ -1,0 +1,121 @@
+PODS:
+  - Alamofire (4.5.1)
+  - CLImageEditor (0.2.0):
+    - CLImageEditor/Core (= 0.2.0)
+  - CLImageEditor/Core (0.2.0)
+  - Cosmos (12.0.1)
+  - DKCamera (1.6.2)
+  - DKImagePickerController (4.0.4):
+    - DKImagePickerController/Camera (= 4.0.4)
+    - DKImagePickerController/Core (= 4.0.4)
+    - DKImagePickerController/ImageDataManager (= 4.0.4)
+    - DKImagePickerController/InlineCamera (= 4.0.4)
+    - DKImagePickerController/PhotoEditor (= 4.0.4)
+    - DKImagePickerController/PhotoGallery (= 4.0.4)
+    - DKImagePickerController/Resource (= 4.0.4)
+  - DKImagePickerController/Camera (4.0.4):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/Core (4.0.4):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.0.4)
+  - DKImagePickerController/InlineCamera (4.0.4):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoEditor (4.0.4):
+    - CLImageEditor (= 0.2.0)
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoGallery (4.0.4):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.0.4)
+  - DKPhotoGallery (0.0.10):
+    - DKPhotoGallery/Core (= 0.0.10)
+    - DKPhotoGallery/Model (= 0.0.10)
+    - DKPhotoGallery/Preview (= 0.0.10)
+    - DKPhotoGallery/Resource (= 0.0.10)
+    - SDWebImage/GIF
+  - DKPhotoGallery/Core (0.0.10):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage/GIF
+  - DKPhotoGallery/Model (0.0.10):
+    - SDWebImage/GIF
+  - DKPhotoGallery/Preview (0.0.10):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage/GIF
+  - DKPhotoGallery/Resource (0.0.10):
+    - SDWebImage/GIF
+  - FLAnimatedImage (1.0.12)
+  - IQKeyboardManagerSwift (5.0.8)
+  - Kingfisher (4.2.0)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.15.7)
+  - PYSearch (0.9.1)
+  - SDWebImage/Core (4.4.2)
+  - SDWebImage/GIF (4.4.2):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SKPhotoBrowser (6.0.0)
+  - SnapKit (4.0.1)
+  - SwiftyJSON (4.2.0)
+  - WechatOpenSDK (1.8.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5.1)
+  - Cosmos (~> 12.0.1)
+  - DKImagePickerController
+  - IQKeyboardManagerSwift (~> 5.0.6)
+  - Kingfisher (~> 4.2.0)
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh
+  - PYSearch
+  - SKPhotoBrowser
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+  - WechatOpenSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CLImageEditor
+    - Cosmos
+    - DKCamera
+    - DKImagePickerController
+    - DKPhotoGallery
+    - FLAnimatedImage
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
+    - PYSearch
+    - SDWebImage
+    - SKPhotoBrowser
+    - SnapKit
+    - SwiftyJSON
+    - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CLImageEditor: ec5ae50b3a54c9818c0bdb243b20665a1c6718e3
+  Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
+  DKCamera: c25552afb4bc3ef4c7966b16a44352d36475fe5d
+  DKImagePickerController: debcc4eaa09b82c06fc237f1bebd6a9fd4be9fa3
+  DKPhotoGallery: d2ee578ee1ae92f3350de9ebc5e2fb5762a76626
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  PYSearch: 76dee18eea3309b60921a5d6a69390a63a5dda15
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SKPhotoBrowser: 76eb862685761707b5745fde7762757966565e07
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
+
+PODFILE CHECKSUM: bb402f52a3b9e29c567a5b29c520aa0667aaf5a5
+
+COCOAPODS: 1.5.3

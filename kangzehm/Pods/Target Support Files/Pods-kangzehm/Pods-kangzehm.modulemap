@@ -1,0 +1,6 @@
+framework module Pods_kangzehm {
+  umbrella header "Pods-kangzehm-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>患者分组</string>
+		<key>image</key>
+		<string>icon_huanzhe_group</string>
+		<key>controller</key>
+		<string>BPHuanZheGroupVC</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>既往问诊</string>
+		<key>image</key>
+		<string>icon_huanzhe_wenzhen</string>
+		<key>controller</key>
+		<string>BPPastWenZhenVC</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>问诊表</string>
+		<key>image</key>
+		<string>icon_huanzhe_wz_table</string>
+		<key>controller</key>
+		<string>BPWenZhenTableView</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>益宠小贴士</string>
+		<key>image</key>
+		<string>icon_huanzhe_pet</string>
+		<key>controller</key>
+		<string>BPPetTipsVC</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>群发中心</string>
+		<key>image</key>
+		<string>icon_huanzhe_center</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>随访计划</string>
+		<key>image</key>
+		<string>icon_huanzhe_suifang</string>
+		<key>controller</key>
+		<string>BPFollowPlanVC</string>
+	</dict>
+</array>
+</plist>
