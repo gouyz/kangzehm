@@ -98,13 +98,13 @@ let kJPushRefreshData = "kJPushRefreshData"
 ///支付宝回调数据 通知名称
 let kAliPaySuccessResult = "aliPaySuccessResult"
 /// 支付宝回调Scheme
-let kAliPayScheme = "KangZeAlipayAPI"
+let kAliPayScheme = "KangZeHmAlipayAPI"
 
 /// 存储选择小区信息的key
 let COMMUNITY_SELECTED = "community_selected"
 
 //APPID，应用提交时候替换
-let APPID = "1436582102"
+let APPID = ""
 /// 极光推送AppKey
 let kJPushAppKey = "62f70fe9bed6d366b2c740a8"
 /// 微信APPID

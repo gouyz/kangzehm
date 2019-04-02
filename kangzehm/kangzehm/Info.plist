@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>kangZeAlipay</string>
+			<string>kangZeHmAlipay</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>KangZeAlipayAPI</string>
+				<string>KangZeHmAlipayAPI</string>
 			</array>
 		</dict>
 		<dict>

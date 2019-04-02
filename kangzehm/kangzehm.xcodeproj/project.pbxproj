@@ -1741,7 +1741,7 @@
 			baseConfigurationReference = A65D1764707DBD3F24A6E76B /* Pods-kangzehm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing KangZe Biological Technology Co., Ltd. (KW89F3SR66)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW89F3SR66;
@@ -1768,7 +1768,7 @@
 			baseConfigurationReference = A0434E77D2130D27DC7C5433 /* Pods-kangzehm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing KangZe Biological Technology Co., Ltd. (KW89F3SR66)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW89F3SR66;
