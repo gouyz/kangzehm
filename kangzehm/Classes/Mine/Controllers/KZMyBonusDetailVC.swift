@@ -75,7 +75,7 @@ class KZMyBonusDetailVC: GYZBaseVC {
                     weakSelf?.tableView.reloadData()
                 }else{
                     ///显示空页面
-                    weakSelf?.showEmptyView(content: "您还没有下线会员")
+                    weakSelf?.showEmptyView(content: "暂无信息")
                 }
             }else{
                 MBProgressHUD.showAutoDismissHUD(message: response["datas"]["error"].stringValue)
