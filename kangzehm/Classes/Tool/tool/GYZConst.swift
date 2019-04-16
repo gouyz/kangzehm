@@ -108,7 +108,7 @@ let APPID = ""
 /// 极光推送AppKey
 let kJPushAppKey = "62f70fe9bed6d366b2c740a8"
 /// 微信APPID
-let kWeChatAppID = "wx8daa8b13e25c9b0a"
+let kWeChatAppID = "wx0e1fdfd1979804ec"
 
 /// QQ AppKey
 let kQQAppKey = "a1e463adb4b3e4914cb043dfd1e1f53a"

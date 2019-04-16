@@ -25,21 +25,18 @@ class KZMyTotalBonusVC: GYZBaseVC {
         // Dispose of any resources that can be recreated.
     }
     func setupUI(){
-        view.addSubview(desLab)
         view.addSubview(managerDesLab)
         view.addSubview(managerBonusLab)
         view.addSubview(bonusDesLab)
         view.addSubview(bonusLab)
+        view.addSubview(preMonthDesLab)
+        view.addSubview(preMonthBonusLab)
+        view.addSubview(monthDesLab)
+        view.addSubview(monthBonusLab)
         
-        desLab.snp.makeConstraints { (make) in
-            make.left.equalTo(kMargin)
-            make.top.equalTo(kMargin)
-            make.right.equalTo(-kMargin)
-            make.height.equalTo(kTitleHeight)
-        }
         managerDesLab.snp.makeConstraints { (make) in
             make.left.equalTo(kMargin)
-            make.top.equalTo(desLab.snp.bottom)
+            make.top.equalTo(kMargin)
             make.width.equalTo(120)
             make.height.equalTo(30)
         }
@@ -55,23 +52,30 @@ class KZMyTotalBonusVC: GYZBaseVC {
             make.left.right.equalTo(bonusDesLab)
             make.height.top.equalTo(managerBonusLab)
         }
+        preMonthDesLab.snp.makeConstraints { (make) in
+            make.left.width.height.equalTo(managerDesLab)
+            make.top.equalTo(managerBonusLab.snp.bottom).offset(20)
+        }
+        preMonthBonusLab.snp.makeConstraints { (make) in
+            make.left.right.height.equalTo(preMonthDesLab)
+            make.top.equalTo(preMonthDesLab.snp.bottom)
+        }
+        monthDesLab.snp.makeConstraints { (make) in
+            make.left.equalTo(bonusDesLab)
+            make.top.height.width.equalTo(preMonthDesLab)
+        }
+        monthBonusLab.snp.makeConstraints { (make) in
+            make.left.right.equalTo(monthDesLab)
+            make.top.height.equalTo(preMonthBonusLab)
+        }
     }
-    ///
-    lazy var desLab : UILabel = {
-        let lab = UILabel()
-        lab.font = k15Font
-        lab.textColor = kBlackFontColor
-        lab.text = "奖金日期："
-        
-        return lab
-    }()
     /// 管理奖
     lazy var managerDesLab : UILabel = {
         let lab = UILabel()
         lab.font = k13Font
         lab.textColor = kBlueFontColor
         lab.textAlignment = .center
-        lab.text = "管理奖金"
+        lab.text = "累计市场人数"
         
         return lab
     }()
@@ -81,7 +85,7 @@ class KZMyTotalBonusVC: GYZBaseVC {
         lab.font = k13Font
         lab.textColor = kBlackFontColor
         lab.textAlignment = .center
-        lab.text = "￥0"
+        lab.text = "0"
         
         return lab
     }()
@@ -91,7 +95,7 @@ class KZMyTotalBonusVC: GYZBaseVC {
         lab.font = k13Font
         lab.textColor = kBlueFontColor
         lab.textAlignment = .center
-        lab.text = "业绩奖金"
+        lab.text = "累计直推积分"
         
         return lab
     }()
@@ -101,7 +105,48 @@ class KZMyTotalBonusVC: GYZBaseVC {
         lab.font = k13Font
         lab.textColor = kBlackFontColor
         lab.textAlignment = .center
-        lab.text = "￥0"
+        lab.text = "0"
+        
+        return lab
+    }()
+    
+    /// 上月奖金
+    lazy var preMonthDesLab : UILabel = {
+        let lab = UILabel()
+        lab.font = k13Font
+        lab.textColor = kBlueFontColor
+        lab.textAlignment = .center
+        lab.text = "上月业绩积分"
+        
+        return lab
+    }()
+    /// 管理奖
+    lazy var preMonthBonusLab : UILabel = {
+        let lab = UILabel()
+        lab.font = k13Font
+        lab.textColor = kBlackFontColor
+        lab.textAlignment = .center
+        lab.text = "0"
+        
+        return lab
+    }()
+    /// 业绩奖
+    lazy var monthDesLab : UILabel = {
+        let lab = UILabel()
+        lab.font = k13Font
+        lab.textColor = kBlueFontColor
+        lab.textAlignment = .center
+        lab.text = "本月业绩积分"
+        
+        return lab
+    }()
+    /// 业绩奖
+    lazy var monthBonusLab : UILabel = {
+        let lab = UILabel()
+        lab.font = k13Font
+        lab.textColor = kBlackFontColor
+        lab.textAlignment = .center
+        lab.text = "0"
         
         return lab
     }()
@@ -121,10 +166,13 @@ class KZMyTotalBonusVC: GYZBaseVC {
             GYZLog(response)
             if response["code"].intValue == kQuestSuccessTag{//请求成功
                 let data = response["datas"]
-                weakSelf?.desLab.text = "奖金日期：" +  data["jj_time"].stringValue
-                weakSelf?.managerBonusLab.text = String.init(format: "￥%.2f", Double(data["manage_jj"].stringValue)!)
+                weakSelf?.managerBonusLab.text = String.init(format: "%d", Double(data["num"].stringValue)!)
                 weakSelf?.bonusLab.text =
-                    String.init(format: "￥%.2f", Double(data["yeji_jj"].stringValue)!)
+                    String.init(format: "%.2f", Double(data["lingsou_jj"].stringValue)!)
+                weakSelf?.preMonthBonusLab.text =
+                    String.init(format: "%.2f", Double(data["yeji_jj_d"].stringValue)!)
+                weakSelf?.monthBonusLab.text =
+                    String.init(format: "%.2f", Double(data["yeji_jj"].stringValue)!)
                 
             }else{
                 MBProgressHUD.showAutoDismissHUD(message: response["datas"]["error"].stringValue)

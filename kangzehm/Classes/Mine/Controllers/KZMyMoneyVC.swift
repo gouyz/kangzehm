@@ -11,7 +11,7 @@ import MBProgressHUD
 
 class KZMyMoneyVC: GYZBaseVC {
 
-    let titleArr : [String] = ["市场","业绩奖金"]
+    let titleArr : [String] = ["直推市场","积分奖励"]
     var scrollPageView: ScrollPageView?
     
     override func viewDidLoad() {
@@ -113,7 +113,7 @@ class KZMyMoneyVC: GYZBaseVC {
         let lab = UILabel()
         lab.font = k13Font
         lab.textColor = kWhiteColor
-        lab.text = "我的余额："
+        lab.text = "我的积分："
         
         return lab
     }()
