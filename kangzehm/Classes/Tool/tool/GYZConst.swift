@@ -104,16 +104,16 @@ let kAliPayScheme = "KangZeHmAlipayAPI"
 let COMMUNITY_SELECTED = "community_selected"
 
 //APPID，应用提交时候替换
-let APPID = ""
+let APPID = "1460650528"
 /// 极光推送AppKey
 let kJPushAppKey = "62f70fe9bed6d366b2c740a8"
 /// 微信APPID
 let kWeChatAppID = "wx0e1fdfd1979804ec"
 
 /// QQ AppKey
-let kQQAppKey = "a1e463adb4b3e4914cb043dfd1e1f53a"
+let kQQAppKey = "16c9588fc0ca264014d15394c1d0e9d8"
 /// QQ APPID
-let kQQAppID = "101506298"
+let kQQAppID = "101562877"
 
 
 /// 无网络提示

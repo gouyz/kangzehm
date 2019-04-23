@@ -166,7 +166,7 @@ class KZMyTotalBonusVC: GYZBaseVC {
             GYZLog(response)
             if response["code"].intValue == kQuestSuccessTag{//请求成功
                 let data = response["datas"]
-                weakSelf?.managerBonusLab.text = String.init(format: "%d", Double(data["num"].stringValue)!)
+                weakSelf?.managerBonusLab.text = "\(data["num"].intValue)"
                 weakSelf?.bonusLab.text =
                     String.init(format: "%.2f", Double(data["lingsou_jj"].stringValue)!)
                 weakSelf?.preMonthBonusLab.text =
