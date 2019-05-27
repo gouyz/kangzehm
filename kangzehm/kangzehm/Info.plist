@@ -49,7 +49,7 @@
 			<string>qqShared</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>QQ101506298</string>
+				<string>QQ101562877</string>
 			</array>
 		</dict>
 		<dict>
@@ -59,7 +59,7 @@
 			<string>qq</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent101506298</string>
+				<string>tencent101562877</string>
 			</array>
 		</dict>
 	</array>
