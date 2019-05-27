@@ -11,13 +11,13 @@ import UIKit
 class GYZLabAndFieldView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = kWhiteColor
         
         setupUI()
     }
     convenience init(desName : String,placeHolder: String,isPhone: Bool){
         self.init(frame: CGRect.zero)
         
-        self.backgroundColor = kWhiteColor
         desLab.text = desName
         textFiled.placeholder = placeHolder
         

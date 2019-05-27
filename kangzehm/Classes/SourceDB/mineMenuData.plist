@@ -20,6 +20,14 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>我的转让</string>
+		<key>image</key>
+		<string>icon_mine_transform</string>
+		<key>controller</key>
+		<string>KZTransformManagerVC</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>邀请好友</string>
 		<key>image</key>
 		<string>icon_mine_apply_friend</string>
