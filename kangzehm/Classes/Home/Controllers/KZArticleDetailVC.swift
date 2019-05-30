@@ -13,7 +13,7 @@ import MBProgressHUD
 class KZArticleDetailVC: GYZBaseVC {
 
     /// 加载内容
-    var url: String = "http://app.kangzesw.com/wap/tmpl/article_show.html?article_id="
+    var url: String = "http://hm.kangzesw.com/wap/tmpl/article_show.html?article_id="
     var dataModel: KZArticleModel?
     /// 文章id
     var articleId: String = ""
